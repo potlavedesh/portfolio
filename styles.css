@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-image: linear-gradient(to right bottom,darkblue 35%,blue);
+}
+.left{
+    font-size: xx-large;
+}
+.firstSec{
+    display: flex;
+    justify-content: space-around;
+    margin: 23px 0;
+}
+.firstSec > div{
+    width: 40%;
+
+}
+.leftSec{
+    font-size: 3rem;
+}
+.leftSec .buttons{
+    padding: 50px 0;
+}
+.leftSec .btn{
+    padding: 12px;
+    background: rgb(72, 72, 233);
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.firstSec .rightSec{
+    margin-top: 20px;
+    background-color: yellow;
+    width: 25%;
+    height: 15%;
+    border-radius: 50%;
+    padding-bottom: 20px;
+}
+.gold{
+    color: gold;
+}
+#element{
+    color: yellow;
+}
+.webImg {
+    margin-top: 30px;
+    border-radius: 50%;
+    scale: 1.5;
+}
+hr{
+    margin-left:30px;
+    margin-right: 30px;
+}
+.intro,.contact{
+    text-align: center;
+    font-size: 60px;
+    text-decoration: none;
+    font-family:'Times New Roman', Times, serif;
+}
+input{
+    margin: 30px;
+    width: 400px;
+    height: 25px;
+    font-size: large;
+}
+.SendMsg{
+    margin-left: 30px;
+    font-size: 20px;
+    padding: 10px 40px 10px 10px;
+    background-color: rgb(255, 247, 0);
+    border-radius: 8px;
+    width: auto;
+    height: auto;
+    box-shadow: 0px 0px 10px rgb(31, 49, 243);
+    margin-bottom: 45px;
+}
+
+footer{
+    display: flex;
+    background-color:rgb(1, 0, 60);
+    color: #fff;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 40px;
+    padding-bottom:10px;
+    width: 100%;
+}
+footer p{
+    margin-right: 500px;
+}
+i{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+table{
+    margin-left: 20%;
+    margin-bottom: 40px;
+}
+caption{
+    text-shadow: 0px 2px 5px yellow;
+    margin-top: 50px;
+    font-size: xxx-large;
+    font-family:'Times New Roman', Times, serif;
+    text-decoration: underline;
+    padding-bottom: 20px;
+    border-width: thick;
+}
+td img{
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 200px;
+}
+td p{
+    text-align: center;
+    font-size: xx-large;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.project{
+    margin-left: 140px;
+    margin-right: 140px;
+}
+.p1 video{
+    width: 500px;
+    height: auto;
+    padding: 50px;
+    transition: transform 0.5s ease;
+}
+.p2 video{
+    width: 500px;
+    height: auto;
+    padding: 50px;
+    transition: transform 0.5s ease;
+}
+.Emp,.Land{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: underline;
+    font-size: xx-large;
+}
+.obj{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-large;
+}
+.greet{
+    margin: 30px;
+    font-size: xx-large;
+    font-family:cursive ;
+    color: black;
+    border-radius:20px;
+    padding: 10px;
+    width: 50%;
+    background:transparent;
+}
+
+.introSec{
+    display: flex;
+}
+.me{
+    width: auto;
+    height: 500px;
+    background-color: antiquewhite;
+    margin: 50px;
+}
+.me{
+    animation:my-img linear;
+    animation-timeline: view();
+    animation-range-end:400px;
+}
+@keyframes my-img{
+    from{transform: translateY(0px);opacity: 1;}
+    to{transform: translateY(-500px);opacity: 0;}
+}
+
+.introSec>p{
+    margin: 30px;
+    font-size: large;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background:transparent;
+    color: black;
+    border-radius:20px;
+    padding: 10px;
+}
+.introSec>p,.p2,input{
+    animation: fade-in linear;
+    animation-timeline: view();
+    animation-range-end:400px;
+}
+@keyframes fade-in{
+    from{transform: translateX(-3500px);opacity: 0;}
+    to{transform: translateX(0px);opacity: 1;}
+}
+
+.greetImg{
+    padding: 50px;
+}
+.webImg1,.greetImg,.SendMsg,.me{
+    animation: fade-in-webImg linear;
+    animation-timeline: view();
+    animation-range-end:400px;
+}
+@keyframes fade-in-webImg{
+    from{transform: translateY(500px);opacity: 0;}
+    to{transform: translateY(0px);opacity: 1;}
+}
+
+.greet,.p1{
+    animation: fade-in-greet linear;
+    animation-timeline: view();
+    animation-range-end:400px;
+}
+@keyframes fade-in-greet{
+    from{transform: translateX(1000px);opacity: 0;}
+    to{transform: translateX(0px);opacity: 1;}
+}
+
+.webImg {
+    animation: image-animation 500ms;
+}
+@keyframes image-animation{
+    0% {opacity: .1;}
+    25%{opacity: .25;}
+    50%{opacity: .5;}
+    100%{opacity: 1;}
+}
+
+
+body
+{
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    height: auto;
+    animation: background-img 10s ease infinite;
+}
+@keyframes background-img{
+    0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
